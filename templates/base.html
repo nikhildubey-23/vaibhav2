@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vaibhav Greens - Residential Plotted Development{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="{{ url_for('static', filename='img/logo.jpeg') }}" alt="Vaibhav Greens Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#rera">RERA</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <img src="{{ url_for('static', filename='img/logo.jpeg') }}" alt="Vaibhav Greens Logo" class="logo-img">
+                        </a>
+                        <p class="footer-tagline">Residential Plots with a Touch of Nature</p>
+                        <p class="footer-concept">Countryside living – Green & serene</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#amenities">Amenities</a></li>
+                            <li><a href="#rera">RERA Details</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> In front of Om Palace, Mopka, Bilaspur, CG</li>
+                            <li><i class="fas fa-phone"></i> 9926512461</li>
+                            <li><i class="fas fa-phone"></i> 8602000030</li>
+                            <li><i class="fas fa-envelope"></i> vabsp2024@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>RERA Information</h4>
+                        <div class="rera-box">
+                            <p><strong>Project:</strong> VAIBHAV GREENS</p>
+                            <p><strong>RERA No.:</strong> PCGRERA230126002030</p>
+                            <p><strong>Authority:</strong> CG-RERA</p>
+                            <p><strong>Valid Till:</strong> 07 January 2031</p>
+                            <a href="https://rera.cgstate.gov.in" target="_blank" class="rera-link">Verify on RERA <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2026 Vaibhav Greens. All Rights Reserved.</p>
+                <p class="disclaimer">Maya Buildcon | Vaibhav Associates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

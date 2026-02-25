@@ -1,0 +1,524 @@
+{% extends "base.html" %}
+
+{% block title %}Vaibhav Greens - Premium Residential Plotted Development in Bilaspur{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-wrapper">
+        <div class="hero-content-side">
+            <div class="hero-content-inner">
+                <div class="hero-badge fade-in">
+                    <span class="badge-line"></span>
+                    <span>CG-RERA Registered Project</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    <span class="title-top">Your Dream</span>
+                    <span class="title-main">Home Awaits</span>
+                    <span class="title-sub">at Vaibhav Greens</span>
+                </h1>
+                <p class="hero-description fade-in">
+                    Discover premium residential plots in the heart of nature. 
+                    Secure your future with a smart investment in Bilaspur's most 
+                    sought-after plotted development.
+                </p>
+                <div class="hero-highlights fade-in">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <span class="highlight-title">Prime Location</span>
+                            <span class="highlight-sub">Beside Girls Nursing College, Near RTO</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <span class="highlight-title">Secure Gated Campus</span>
+                            <span class="highlight-sub">24/7 Security & Boundary Wall</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="highlight-text">
+                            <span class="highlight-title">RERA Verified</span>
+                            <span class="highlight-sub">PCGRERA230126002030</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons fade-in">
+                    <a href="#about" class="btn btn-primary">
+                        <span>View Project Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Schedule Visit</span>
+                    </a>
+                </div>
+                <div class="hero-rera fade-in">
+                    <div class="rera-badge-mini">
+                        <i class="fas fa-verified"></i>
+                        <span>RERA Valid Till: 07 January 2031</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-side">
+            <div class="hero-image-container">
+                <img src="{{ url_for('static', filename='img/img1.jpeg') }}" alt="Vaibhav Greens Project" class="hero-main-image">
+                <div class="hero-image-overlay"></div>
+                <div class="hero-image-card card-1">
+                    <div class="card-icon"><i class="fas fa-home"></i></div>
+                    <div class="card-text">
+                        <span class="card-number">150+</span>
+                        <span class="card-label">Plots Available</span>
+                    </div>
+                </div>
+                <div class="hero-image-card card-2">
+                    <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="card-text">
+                        <span class="card-number">RERA</span>
+                        <span class="card-label">Verified</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shapes-side">
+                <div class="side-shape shape-a"></div>
+                <div class="side-shape shape-b"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Scroll Down</span>
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">About Us</span>
+            <h2 class="section-title">Vaibhav <span class="accent">Greens</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-content fade-in">
+                <h3>Your Future-Ready Investment</h3>
+                <p>Vaibhav Greens is not just a home address — it is a future-ready investment, designed to appreciate in value while offering immediate lifestyle benefits. Nestled in the serene village of Lagra, Bilaspur, we offer you a perfect blend of nature and modern living.</p>
+                <p>A meticulously planned residential community offering a green, eco-friendly, and comfortable lifestyle in the heart of nature.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-tree"></i></span>
+                        <span>Lush Green Surroundings</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-shield-alt"></i></span>
+                        <span>Secure Gated Campus</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="fas fa-road"></i></span>
+                        <span>Wide Roads & Parks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image fade-in">
+                <img src="{{ url_for('static', filename='img/img2.jpeg') }}" alt="Vaibhav Greens Project View">
+                <div class="about-image-overlay"></div>
+            </div>
+        </div>
+        <div class="about-stats-row">
+            <div class="about-stats fade-in">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">+ Plots Available</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Years RERA Valid</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">+ Amenities</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Gated Security</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-developer fade-in">
+            <div class="developer-card">
+                <div class="developer-header">
+                    <h4><i class="fas fa-building"></i> Builder & Developer</h4>
+                    <span class="developer-name">Maya Buildcon</span>
+                </div>
+                <div class="developer-header">
+                    <h4><i class="fas fa-bullhorn"></i> Marketed By</h4>
+                    <span class="developer-name">Vaibhav Associates</span>
+                </div>
+                <div class="developer-header">
+                    <h4><i class="fas fa-pencil-ruler"></i> Architect & Planner</h4>
+                    <span class="developer-name">Agrawal Architects – Interiors & Town Planners</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location" id="location">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Location</span>
+            <h2 class="section-title">Location <span class="accent">Advantages</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="location-grid">
+            <div class="location-address fade-in">
+                <div class="address-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Site Address</h3>
+                    <p>Beside Girls Nursing College,<br>Near RTO Office,<br>Village Lagra, Bilaspur, Chhattisgarh</p>
+                </div>
+                <div class="landmarks-list">
+                    <h4>Nearby Landmarks</h4>
+                    <ul>
+                        <li><i class="fas fa-hospital"></i> Government Nursing College</li>
+                        <li><i class="fas fa-school"></i> Loyola School</li>
+                        <li><i class="fas fa-university"></i> SECL Headquarters</li>
+                        <li><i class="fas fa-tree"></i> Vasant Vihar</li>
+                        <li><i class="fas fa-ring"></i> Hari Amrit Marriage Resort</li>
+                        <li><i class="fas fa-building"></i> Brilliant Public School</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="location-distances fade-in">
+                <h3>Distance Chart</h3>
+                <div class="distance-grid">
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="distance-label">College</span>
+                        <span class="distance-value">1.5 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-train"></i></span>
+                        <span class="distance-label">Railway Station</span>
+                        <span class="distance-value">6.0 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-hospital"></i></span>
+                        <span class="distance-label">Hospitals</span>
+                        <span class="distance-value">3.2 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-school"></i></span>
+                        <span class="distance-label">Schools</span>
+                        <span class="distance-value">1.0 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-university"></i></span>
+                        <span class="distance-label">Banks</span>
+                        <span class="distance-value">0.5 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="distance-label">Market Area</span>
+                        <span class="distance-value">1.0 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-car"></i></span>
+                        <span class="distance-label">RTO Bilaspur</span>
+                        <span class="distance-value">0.5 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-futbol"></i></span>
+                        <span class="distance-label">Amusement Park</span>
+                        <span class="distance-value">1.0 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-gas-pump"></i></span>
+                        <span class="distance-label">Petrol Pump</span>
+                        <span class="distance-value">1.0 km</span>
+                    </div>
+                    <div class="distance-item">
+                        <span class="distance-icon"><i class="fas fa-briefcase"></i></span>
+                        <span class="distance-label">SECL HQ</span>
+                        <span class="distance-value">5.0 km</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location-map fade-in">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Location Map</h3>
+                <p>Village Lagra, Bilaspur, Chhattisgarh</p>
+                <a href="#contact" class="btn btn-primary">Get Directions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Amenities Section -->
+<section class="amenities" id="amenities">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Features</span>
+            <h2 class="section-title">World Class <span class="accent">Amenities</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="amenities-grid">
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure Gated Campus</h3>
+                <p>24/7 security with gated entrance ensuring complete safety for your family</p>
+            </div>
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-cricket"></i>
+                </div>
+                <h3>Cricket Practice Net</h3>
+                <p>Professional practice nets for cricket enthusiasts</p>
+            </div>
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-badminton"></i>
+                </div>
+                <h3>Badminton Court</h3>
+                <p>Well-maintained courts for recreational games</p>
+            </div>
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-volleyball-ball"></i>
+                </div>
+                <h3>Volleyball Court</h3>
+                <p>Dedicated court for volleyball lovers</p>
+            </div>
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>Kids Play Area</h3>
+                <p>Safe and fun play area for children</p>
+            </div>
+            <div class="amenity-card fade-in">
+                <div class="amenity-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <h3>Outdoor Games Area</h3>
+                <p>Multiple outdoor gaming options for all ages</p>
+            </div>
+        </div>
+    </div>
+    <div class="amenities-shape">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,64 C288,120 576,0 864,64 C1152,128 1440,32 1440,32 L1440,120 L0,120 Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- RERA Section -->
+<section class="rera" id="rera">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Legal</span>
+            <h2 class="section-title">RERA <span class="accent">Details</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="rera-content fade-in">
+            <div class="rera-badge">
+                <i class="fas fa-certificate"></i>
+                <span>CG-RERA Verified Project</span>
+            </div>
+            <div class="rera-grid">
+                <div class="rera-card">
+                    <h4><i class="fas fa-building"></i> Project Name</h4>
+                    <p>VAIBHAV GREENS</p>
+                    <span class="rera-sub">(Residential Plotted Development)</span>
+                </div>
+                <div class="rera-card">
+                    <h4><i class="fas fa-file-alt"></i> RERA Registration No.</h4>
+                    <p class="rera-number">PCGRERA230126002030</p>
+                </div>
+                <div class="rera-card">
+                    <h4><i class="fas fa-gavel"></i> RERA Authority</h4>
+                    <p>Chhattisgarh Real Estate Regulatory Authority (CG-RERA)</p>
+                </div>
+                <div class="rera-card">
+                    <h4><i class="fas fa-map-pin"></i> Project Location</h4>
+                    <p>Village Lagra, Khasra No. 15002, Bilaspur, Chhattisgarh</p>
+                </div>
+                <div class="rera-card">
+                    <h4><i class="fas fa-calendar-alt"></i> RERA Validity</h4>
+                    <p>From 22 January 2026 to 07 January 2031</p>
+                </div>
+                <div class="rera-card">
+                    <h4><i class="fas fa-globe"></i> RERA Website</h4>
+                    <a href="https://rera.cgstate.gov.in" target="_blank" class="rera-link-btn">Verify Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="rera-disclaimer">
+                <p><i class="fas fa-info-circle"></i> <strong>Legal Disclaimer:</strong> Specifications, amenities, images, drawings, plans, and visuals are indicative and subject to approvals. This brochure is not a legal document. The relationship between the developer and allottee shall be governed strictly by the agreement for sale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Team</span>
+            <h2 class="section-title">Our <span class="accent">Partners</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="partners-grid fade-in">
+            <div class="partner-card">
+                <div class="partner-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h4>Mr. Rakesh Dua</h4>
+                <p>Partner</p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h4>Mr. Anmol Juneja</h4>
+                <p>Partner</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Reach Us</span>
+            <h2 class="section-title">Contact & <span class="accent">Booking</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info fade-in">
+                <div class="contact-card">
+                    <h3><i class="fas fa-headset"></i> Get in Touch</h3>
+                    <p>Interested in booking a plot? Contact us today!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>9926512461</p>
+                                <p>8602000030</p>
+                                <p>07752-354179</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>vabsp2024@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <h4>Office Address</h4>
+                                <p>In front of Om Palace, Mopka, Bilaspur, Chhattisgarh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper fade-in">
+                <form class="contact-form" id="bookingForm">
+                    <h3><i class="fas fa-file-signature"></i> Book Your Plot</h3>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <select name="interest" required>
+                            <option value="">Select Interest</option>
+                            <option value="residential">Residential Plot</option>
+                            <option value="investment">Investment Purpose</option>
+                            <option value="visit">Schedule Visit</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery" id="gallery">
+    <div class="section-container">
+        <div class="section-header fade-in">
+            <span class="section-tag">Gallery</span>
+            <h2 class="section-title">Project <span class="accent">Gallery</span></h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-main fade-in">
+                <img src="{{ url_for('static', filename='img/img1.jpeg') }}" alt="Vaibhav Greens Project">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="{{ url_for('static', filename='img/img2.jpeg') }}" alt="Vaibhav Greens View">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="{{ url_for('static', filename='img/img1.jpeg') }}" alt="Vaibhav Greens Entrance">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="{{ url_for('static', filename='img/img2.jpeg') }}" alt="Vaibhav Greens Amenities">
+                <div class="gallery-overlay">
+                    <i class="fas fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="cta-overlay"></div>
+    <div class="cta-content fade-in">
+        <h2>Ready to Own Your Dream Plot?</h2>
+        <p>Join hundreds of happy families at Vaibhav Greens</p>
+        <a href="#contact" class="btn btn-primary btn-large">Book Your Plot Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+{% endblock %}
